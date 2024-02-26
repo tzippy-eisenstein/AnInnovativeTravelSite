@@ -1,0 +1,27 @@
+
+
+<!-- הטבלה עם שורת הכותרות -->
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- השורות עם נתוני המשתמשים -->
+      <tr *ngFor="let user of ListUser">
+        <td>{{ user.idUser }}</td>
+        <td>{{ user.userFirstName }}</td>
+        <td>{{ user.userLastName }}</td>
+        <td>{{ user.userEmail }}</td>
+        <td>{{ user.userPhone }}</td>
+        <td>{{ user.userPassword }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

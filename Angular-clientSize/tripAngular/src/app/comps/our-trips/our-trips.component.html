@@ -1,0 +1,21 @@
+
+<!-- סינונים עפ"י סוג הטיול -->
+<mat-chip-listbox aria-label="Fish selection">
+  <mat-chip-option *ngFor="let type of listTripTypes"  class="btn btn-info" (click)="filter(type.idType)">{{type.nameType}}</mat-chip-option>
+  <mat-chip-option  (click)="all()">הכל</mat-chip-option >
+ </mat-chip-listbox>
+
+ <!-- הצגת כל הטיולים שעוד לא התקימו -->
+ <div class="container">
+    <div class="trip-container">
+        <div class="trip-card" *ngFor="let trip of listTripFilter" (click)="openTripPanel(trip)">
+            <img src="../../../assets/pics/{{trip.image}}" alt="{{ trip.durationTrip }}" class="trip-image">
+            <div class="trip-details"><a routerLink="TripPanel"></a>  
+                <p>Destination: {{ trip.destinationTrip }}</p>
+                <p>Date: {{ trip.dateTrip }}</p>
+                <p>Type: {{ trip.typeName }}</p>
+            </div>
+        </div>
+    </div>
+</div> 
+ 

@@ -1,0 +1,48 @@
+<!-- <button (click)="byDate()">טיולים שעוד לא היו</button> -->
+
+<!-- סינון עפי סוג טיול -->
+<mat-chip-listbox aria-label="Fish selection">
+  <mat-chip-option  *ngFor="let type of ListTypeTrips"  class="btn btn-info" (click)="filter(type.idType)">{{type.nameType}}</mat-chip-option>
+  <!-- <mat-chip-option  (click)="all()">הכל</mat-chip-option > -->
+</mat-chip-listbox>
+   
+    <mat-card-content> 
+        <h1> </h1>
+        <!-- עדכון פרטי משתמש -->
+        <button class="bb" mat-raised-button color="primary" (click)="update()">Update user details</button>
+        <!-- מחיקת משתמש -->
+        <button class="bb" mat-raised-button color="primary" (click)="deleteUser()">Remove User</button>
+        <!-- סינון לפי מחיר -->
+        <div>     
+          <button mat-raised-button color="primary" (click)="filterByPrice(value)">Filter</button>
+          <label class="example-value-label" [(ngModel)]="value" name="value">{{slider.value}}</label>
+        </div> 
+     <!-- slider -->
+     <mat-slider
+      class="example-margin"
+      [disabled]="disabled"
+      [max]="max"
+      [min]="min"
+      [step]="step"
+      [discrete]="thumbLabel"
+      [showTickMarks]="showTicks">
+        <input matSliderThumb [(ngModel)]="value" #slider name="value">
+      </mat-slider>
+    </mat-card-content>
+
+    <!-- כל הזמנות המשתמש -->
+<div class="container">
+    <div class="trip-container">
+        <h1 *ngIf="userTrip[0]==null">אין טיולים מוזמנים להצגה</h1>
+        <div class="trip-card" *ngFor="let trip of filteredUserTrip " (click)="openTripPanel(trip)">
+            <img src="../../../assets/pics/{{trip.image}}" alt="{{ trip.durationTrip }}" class="trip-image">
+            <div class="trip-details"><a routerLink="TripPanel"></a>  
+                <p>Destination: {{ trip.destinationTrip }}</p>
+                <p>Date: {{ trip.dateTrip }}</p>
+                <p>Type: {{ trip.typeName }}</p>  
+                <p></p>         
+            <button mat-raised-button (click)="deleteBooking(trip.idTrip!)">delete order</button>    
+         </div>
+        </div>
+    </div>
+</div>

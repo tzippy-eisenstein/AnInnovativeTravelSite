@@ -1,0 +1,61 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjust to align the form closer to the top */
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 30px 0 0; /* Adjust the top margin value as desired */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the CSS remains unchanged */
+
+.login-form__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  margin-top: 10px; /* Adjust the margin value as desired */
+  padding: 10px 20px;
+  background-color: #5a5c5a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login-form button:hover {
+  background-color: #163779;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 5cm auto;
+  padding: 20px;
+  width: 60%;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6qmrUsy15a/0LKv564vHwjSBC/BcJNy6iyVSZ9c0uqngs2zWtWMaVXLuQWe7Q+gbFm93gsDn1NA8HrD/Tq9UQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\The user\\Documents\\חומר מסלול\\אנגולר-אתר טיולים\\Trips\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\The user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\The user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\The user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

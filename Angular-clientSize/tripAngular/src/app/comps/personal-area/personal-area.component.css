@@ -1,0 +1,35 @@
+.example-result-card h2 {
+  margin: 0 8px;
+}
+
+.example-label-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 0;
+  max-width: 284px;
+}
+
+.example-result-card .example-value-label {
+  font-weight: 600;
+}
+
+.bb {
+display: block;
+width: 30%;
+margin-top: 10px; /* Adjust the margin value as desired */
+padding: 10px 20px;
+background-color: #5a5c5a;
+color: #ffffff;
+border: none;
+border-radius: 4px;
+font-size: 16px;
+font-weight: bold;
+float: left;
+/* float: right; */
+margin-right: 100px;
+margin-left: 100px;
+}
+
+.bb:hover {
+background-color: #163779;
+}

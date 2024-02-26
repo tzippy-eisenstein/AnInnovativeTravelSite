@@ -1,0 +1,73 @@
+.trip-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1cm;
+  }
+  
+  .trip-image img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .trip-info {
+    width: 60%;
+    padding: 20px;
+    background-color: #f2f5f8;
+    border-radius: 10px;
+  }
+  
+  .trip-info h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .trip-info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table td {
+    padding: 5px 0;
+    color: #666;
+  }
+  
+  .book-now-btn {
+    display: block;
+    width: 50px;
+  }
+  .book-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-now-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .book-now-btn:active {
+    background-color: #004280;
+  }
+  p{
+    
+  }
+  .bold{
+    background-color: yellow;
+    text-align: center;
+
+  }

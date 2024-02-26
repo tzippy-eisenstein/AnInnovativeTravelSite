@@ -1,0 +1,19 @@
+
+<h1 mat-dialog-title>Hi {{current?.CurentUser?.userFirstName}}</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+  </mat-form-field>
+</div>
+<div class="registration-form">
+    <form (submit)="orderf()">
+      <div class="form-group">
+        <label for="places">Number of Places:</label>
+        <input type="number" id="places" [(ngModel)]="order.places" required name="
+        order">
+      </div>
+      <button type="submit"  >Order / Proceed to Payment</button>
+    </form>
+  </div>
+<div mat-dialog-actions>
+    <button   mat-button (click)="onNoClick()" >close</button>
+ </div>

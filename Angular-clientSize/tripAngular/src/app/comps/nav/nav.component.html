@@ -1,0 +1,23 @@
+<!-- ניתובים -->
+    <header  class="navbar">
+        <nav  >
+        <a class="nav-item active" routerLink="home">Home</a>
+        <a class="nav-item" routerLink="login">Login</a>
+        <a *ngIf="!serviceVariable?.CurentUser?.idUser" class="nav-item" routerLink="register">Register</a>
+        <a class="nav-item" routerLink="ourTrips">Our Trips</a>
+        
+        <ng-container >
+          <a *ngIf="serviceVariable?.maneger?.userFirstName" class="nav-item" routerLink="ManegerComponent">Manager</a>
+        </ng-container>
+      
+        <ng-container *ngIf="serviceVariable?.CurentUser?.userFirstName">
+          <a class="nav-item" routerLink="personaleArea">{{serviceVariable?.CurentUser?.userFirstName}}</a>
+        </ng-container>
+    
+        <button mat-raised-button style="align-items: left"
+        matTooltip="Contact customer service from 8 am to 4 pm"
+        aria-label="Button that displays a tooltip that has custom delays through a default config">
+        *2668 
+       </button>
+      </nav>
+    </header>

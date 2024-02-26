@@ -1,0 +1,47 @@
+<div class="trip-details">
+  <div class="trip-image">
+    <!-- <img src="../../../assets/pics/{{trip.image}}" alt="Trip Image"> -->
+    <img src="../../../assets/pics/לוגו.jpg" alt="Trip Image">
+
+  </div>
+  <div class="trip-info">
+    <h3>Trip Name: {{trip.destinationTrip}}</h3>
+    <p>Trip Description</p>
+    <table>
+      <tr>
+        <td>Destination:</td>
+        <td>{{ trip.destinationTrip }}</td>
+      </tr>
+      <tr>
+        <td>Date:</td>
+        <td>{{ trip.dateTrip }}</td>
+      </tr>
+      <tr>
+        <td>Duration:</td>
+        <td>{{ trip.durationTrip }}</td>
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td>{{ trip.price }}</td>
+      </tr>
+      <tr>
+        <td>Places Available:</td>
+        <td>{{ trip.placesAvailable }}</td>
+      </tr>
+      <tr>
+        <td>Leaving Time:</td>
+        <td>{{ trip.leavingTime }}</td>
+      </tr>
+      <tr>
+        <td>Type:</td>
+        <td>{{ trip.typeName }}</td>
+      </tr>
+      
+    </table>
+    <p></p>
+    <!-- במידה והמשתמש מחובר למערכת יופיע כפתור עם אפשרות להזמנה 
+    אחרת תוצג למשתמש הודעה שעליו להתחבר למערכת כדי להזמין מקומות -->
+        <p class="bold" *ngIf="!userServer.CurentUser.idUser"> To book places for a trip you need to log in to the site </p>
+        <button  *ngIf="userServer.CurentUser.idUser" mat-raised-button (click)="openDialog(trip.idTrip!,trip.destinationTrip!)">book Now</button>
+  </div>
+</div>
